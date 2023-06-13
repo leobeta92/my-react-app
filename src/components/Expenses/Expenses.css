@@ -5,3 +5,9 @@
     width: 50rem;
     max-width: 95%;
   }
+
+  .no-transactions {
+    color: white;
+    font-weight: 800;
+    padding: 0 1rem;
+  }
