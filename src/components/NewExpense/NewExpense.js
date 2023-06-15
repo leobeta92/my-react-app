@@ -18,6 +18,7 @@ function NewExpense(props) {
         }
         console.log("Expense Data:",props.onAddExpense);
         props.onAddExpense(expenseData);
+        setDone(false);
     }
 
     function showExpenseFormHandler(e) {

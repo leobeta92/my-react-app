@@ -44,16 +44,14 @@ function ExpenseForm(props) {
 
         // Passing values up/over
         props.onSaveExpenseData(expenseData);
-        // props.done = true;
-        // console.log("Entered Form",props.done);
 
         // Resetting state
         setEnteredTitle('');
         setEnteredAmount('');
         setEnteredDate('');
 
-        // Hiding Form Again
-        props.onHideExpenseForm();
+        // // Hiding Form Again
+        // props.onHideExpenseForm();
     }
 
     return (
@@ -73,6 +71,7 @@ function ExpenseForm(props) {
             </div>
         </div>
         <div className='new-expense__actions'>
+            <button type="button" onClick={props.onHideExpenseForm}>Cancel</button>
             <button type="submit">Add Expense</button>
         </div>
     </form> )
